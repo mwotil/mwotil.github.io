@@ -2991,6 +2991,7 @@ input, select, textarea {
 
 			.spotlight .content > :last-child {
 				margin-bottom: 0;
+				text-align: justify;
 			}
 
 			.spotlight .content header.major {
