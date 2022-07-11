@@ -2991,6 +2991,7 @@ input, select, textarea {
 
 			.spotlight .content > :last-child {
 				margin-bottom: 0;
+				text-align: justify;
 			}
 
 			.spotlight .content header.major {
@@ -3008,7 +3009,7 @@ input, select, textarea {
 			.spotlight .image img {
 				display: block;
 				border-radius: 100%;
-				width: 16em;
+				width: 4em;
 			}
 
 		@media screen and (max-width: 980px) {
