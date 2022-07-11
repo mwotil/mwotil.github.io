@@ -3072,7 +3072,7 @@ input, select, textarea {
 /* Header */
 
 	#header {
-		padding: 5em 5em 1em 5em ;
+		padding: 1em 5em 1em 5em ;
 		text-align: center;
 	}
 
@@ -3217,7 +3217,7 @@ input, select, textarea {
 		transition: background-color 0.2s ease, border-top-left-radius 0.2s ease, border-top-right-radius 0.2s ease, padding 0.2s ease;
 		background-color: #ffffff;
 		color: #636363;
-		position: absolute;
+		position: relative;
 		width: 64em;
 		max-width: calc(100% - 4em);
 		padding: 1em;
@@ -3226,10 +3226,14 @@ input, select, textarea {
 		border-top-right-radius: 0.25em;
 		cursor: default;
 		text-align: center;
+		margin-bottom: 5em;
+		margin-right:  5em;
+		
+		
 	}
 
 		#nav input, #nav select, #nav textarea {
-			color: #636363;
+			color: #610c83;
 		}
 
 		#nav a:hover {
@@ -3274,7 +3278,7 @@ input, select, textarea {
 				transition: margin 0.2s ease;
 				display: inline-block;
 				margin: 0 0.35em;
-				padding: 0;
+				padding-bottom: 0;
 				vertical-align: middle;
 			}
 

@@ -28,11 +28,11 @@
       <nav id="nav" style="top: 28px; left: 149px; width: 1186px;
         height: 78px;">
         <ul>
-          <li><a href="#intro" class="active">Home</a></li>
-          <li><a href="#first">Work</a></li>
-          <li><a href="#second">Education</a></li>
-          <li><a href="#third">Research</a></li>
-          <li><a href="#fourth">Teaching</a></li>
+          <li><a href="#intro" onclick="displayIntro();" class="active">Home</a></li>
+          <li><a href="#first" onclick="displayFirst();">Work</a></li>
+          <li><a href="#second" onclick="displaySecond();">Education</a></li>
+          <li><a href="#third" onclick="displayThird();">Research</a></li>
+          <li><a href="#fourth" onclick="displayFourth();">Teaching</a></li>
           <li><a href="#cta">Contacts</a></li>
         </ul>
       </nav>
@@ -186,6 +186,55 @@
       </footer>
     </div>
     <!-- Scripts -->
+    <script>
+      const introSection = document.getElementById("intro");
+      const firstSection = document.getElementById("first");
+      const secondSection = document.getElementById("second");
+      const thirdSection = document.getElementById("third");
+      const fourthSection = document.getElementById("fourth");
+      document.addEventListener("DOMContentLoaded",()=>{
+        firstSection.style.display = "none";
+        secondSection.style.display = "none";
+        thirdSection.style.display = "none";
+        fourthSection.style.display = "none";
+      });
+
+      const displayIntro = ()=>{
+        introSection.style.display = "block";
+        firstSection.style.display = "none";
+        secondSection.style.display = "none";
+        thirdSection.style.display = "none";
+        fourthSection.style.display = "none";
+      }
+      const displayFirst = ()=>{
+        introSection.style.display = "none";
+        firstSection.style.display = "block";
+        secondSection.style.display = "none";
+        thirdSection.style.display = "none";
+        fourthSection.style.display = "none";
+      }
+      const displaySecond = ()=>{
+        introSection.style.display = "none";
+        firstSection.style.display = "none";
+        secondSection.style.display = "block";
+        thirdSection.style.display = "none";
+        fourthSection.style.display = "none";
+      }
+      const displayThird = ()=>{
+        introSection.style.display = "none";
+        firstSection.style.display = "none";
+        secondSection.style.display = "none";
+        thirdSection.style.display = "block";
+        fourthSection.style.display = "none";
+      }
+      const displayFourth = ()=>{
+        introSection.style.display = "none";
+        firstSection.style.display = "none";
+        secondSection.style.display = "none";
+        thirdSection.style.display = "none";
+        fourthSection.style.display = "block";
+      }
+    </script>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/jquery.scrollex.min.js"></script>
     <script src="assets/js/jquery.scrolly.min.js"></script>
